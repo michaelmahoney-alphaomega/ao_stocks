@@ -2,8 +2,8 @@ import pandas
 import scikitlearn
 import ao_log
 import requests
-
-def data_get(url:str, instrument_key: str, interval:str, to_date: str, from_date: str = None, ):
+import datetime
+def data_get(url:str, instrument_key: str, interval:str, to_date: datetime.date, from_date: datetime.date|None = None, ):
     """
     Here's a sample response from the upstox historical candle data API. 
     base url: https://api.upstox.com/v2/historical-candle/:instrument_key/:interval/:to_date/:from_date
