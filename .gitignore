@@ -2,3 +2,5 @@
 */logs
 *config.json
 *.csv
+env/*
+*NSE.json
